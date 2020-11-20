@@ -55,7 +55,15 @@
 \usepackage{subfig}
 \usepackage{amsmath,amssymb,latexsym,times}
 
-\usepackage{todonotes}
+\usepackage[textwidth=20mm]{todonotes}
+\usepackage{lineno}
+\linenumbers
+
+\paperwidth=\dimexpr \paperwidth + 6cm\relax
+\oddsidemargin=\dimexpr\oddsidemargin + 3cm\relax
+\evensidemargin=\dimexpr\evensidemargin + 3cm\relax
+% \marginparwidth=\dimexpr \marginparwidth + 5cm\relax
+
 
 \graphicspath{{figures/}}
 
@@ -94,7 +102,7 @@
 (no order yet) M.~A. Troxel,$^{1}$\thanks{E-mail: michael.troxel@duke.edu (MAT)}
 Conghao Zhou,$^{1}$
 Alexander Tong$^{1}$
-and othres$^{1}$
+and others$^{1}$
 \\
 % List of institutions
 $^{1}$Department of Physics, Duke University, Durham, NC 27708, USA\\
@@ -133,11 +141,12 @@ cosmology: observations -- gravitational lensing: weak -- galaxies: clusters: ge
 % in context, cites relevant earlier studies in the field by \citet{Others2013},
 % and describes the problem the authors aim to solve \citep[e.g.][]{Author2012}.
 
+\listoftodos
 
 \section{Introduction}
-In 1919, Arthur Eddington and Frank Dyson verified the theory of general relativity by observing the deflection of the light by the sun, which is aptly named gravitational lensing. 100 years after the Eddington experiment, gravitational lensing, especially in the weak regime, has become one of the most powerful probes in modern cosmology surveys. Weak lensing probes including galaxy-galaxy lensing, cluster lensing, and cosmic shear, combined with other types of probes, can constrain cosmological parameters effectively and thus reveal the growth history of the universe. The recent growth of data volume from Stage III surveys such as DES, KiDS, and HSC \ct{Hildebrandt, Amon, Aihara} \verify{is this three papers?} has significantly lowered the statistical errors in the lensing signal. And thus lowering the systematic errors are critical for extracting weak lensing signals from existing and future survey. One source of systematic error in weak lensing is from the correlated intrinsic alignment signals that contaminate shear correlations. The intrinsic alignment of galaxies are caused by a variety of physical processes during the structure formation. The intrinsic alignment of galaxies acts as a nuisance signal to the lensing signal measurement and can strongly bias results we get from it. The constraint of the equation of dark energy can be biased by 50\% or more by intrinsic alignment. Similarly, the amplitude of matter fluctuations can be biased by 30\%. Isolating intrinsic alignment signal not only improve the result we get from lensing surveys but also provides insights to the evolution of galaxies.\ct{Troxel}
+In 1919, Arthur Eddington and Frank Dyson verified the theory of general relativity by observing the deflection of the light by the sun, which is aptly named gravitational lensing. 100 years after the Eddington experiment, gravitational lensing, especially in the weak regime, has become one of the most powerful probes in modern cosmology surveys. Weak lensing probes including galaxy-galaxy lensing, cluster lensing, and cosmic shear, combined with other types of probes, can constrain cosmological parameters effectively and thus reveal the growth history of the universe. The recent growth of data volume from Stage III surveys such as DES, KiDS, and HSC \ct{Hildebrandt, Amon, Aihara} \verify{is this three papers?} has significantly lowered the statistical errors in the lensing signal. And thus lowering the systematic errors are critical for extracting weak lensing signals from existing and future survey. One source of systematic error in weak lensing is from the correlated intrinsic alignment signals that contaminate shear correlations. The intrinsic alignment of galaxies are caused by a variety of physical processes during the structure formation. The intrinsic alignment of galaxies acts as a nuisance signal to the lensing signal measurement and can strongly bias results we get from it. The constraint of the equation of dark energy can be biased by 50\% or more by intrinsic alignment. Similarly, the amplitude of matter fluctuations can be biased by 30\%. Isolating intrinsic alignment signal not only improve the result we get from lensing surveys but also provides insights to the evolution of galaxies.\cite{troxeliareview}
 
-In the framework of $\Lambda$CDM cosmology, one of the most natural places for the intrinsic alignment between galaxies to emerge is within clusters of galaxies \ct{White, Rees}. 
+In the framework of $\Lambda$CDM cosmology, one of the most natural places for the intrinsic alignment between galaxies to emerge is within clusters of galaxies \cite{whiterees}. 
 
 
 
@@ -158,7 +167,9 @@ To identify clusters, the redmapper algorithm counts the excess number of red-se
 
 The algorithm centers each cluster on the most likely central galaxy, based on an iterativley trained filter relying on galaxy brightneess, cluster richness, and local density. to determine the central candidate probability. Each red-sequence cluster member is also assigned an associated membership probability, which we weight all measurements by. Additional information about the quality of photometric redshifts of the clusters and cluster members can be found in \cite{2019MNRAS.482.1352M,wthetapaper}, but over most of the redshift range used in this paper cluster redshifts are unbiased at the level of $|\Delta z| \leq 0.003$ with a median photometric redshift scatter of $\sigma_z/(1+z)\approx 0.006$. For red-sequence cluster members, this is... XXX
 
-In this work, we use a total of XXX clusters from the DES Y1 redMaPPer catalog (XXX in the volume-limited catalog). Within these clusters, there are an effective number of XXX (XXX) cluster members (central/satellite galaxies). We include clusters outside the range used for cosmology in \cite{2020arXiv200211124D} in order to increase our statistical power, but use the same $\lambda>20$ selection on richness, since inference of the halo shape based on the distribution of satellite galaxies is increasingly difficult as the number of satellite galaxies decreases. The redshift distribution of the final sample of clusters is shown in Fig. \ref{fig:zdist}.
+
+
+In this work, we use a total of XXX clusters from the DES Y1 redMaPPer catalog (XXX in the volume-limited catalog). Within these clusters, there are an effective number of XXX (XXX) cluster members (central/satellite galaxies)\todo{need to unify the cuts we use}. We include clusters outside the range used for cosmology in \cite{2020arXiv200211124D} in order to increase our statistical power, but use the same $\lambda>20$ selection on richness, since inference of the halo shape based on the distribution of satellite galaxies is increasingly difficult as the number of satellite galaxies decreases. The redshift distribution of the final sample of clusters is shown in Fig. \ref{fig:zdist}.
 
 
 
@@ -195,6 +206,7 @@ The \textsc{metacalibration} catalog yields a total of 35 million objects, XXX o
 % 	\end{tabular}
 % \end{table}
 
+\todo{make a demonstration of the alignment}
 
 \begin{figure}
 \begin{center}
@@ -374,6 +386,7 @@ We have used the distribution of satellite galaxies within clusters as a proxy f
 \begin{center}
 %\includegraphics[width=\columnwidth]{gammar.png}
 \end{center}
+\missingfigure{}
 \caption[]{Several tests of potential systematic contributions to the measured $\gamma_r$ in Fig. \ref{fig:gammar}. 1) The cross-component $\gamma_x$. 2) The $\gamma_r$ signal measured using foreground galaxies around cluster centers. 3) The $\gamma_r$ signal measured using background galaxies around cluster centers. Tests (1) \& (2) are expected to be consistent with zero, while (3) should show a tangential shear signal due to gravitational lensing. These are confirmed by the measurements.
 \label{fig:gammax}}
 \end{figure}

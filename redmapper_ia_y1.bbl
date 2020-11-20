@@ -1,0 +1,141 @@
+\begin{thebibliography}{}
+\makeatletter
+\relax
+\def\mn@urlcharsother{\let\do\@makeother \do\$\do\&\do\#\do\^\do\_\do\%\do\~}
+\def\mn@doi{\begingroup\mn@urlcharsother \@ifnextchar [ {\mn@doi@}
+  {\mn@doi@[]}}
+\def\mn@doi@[#1]#2{\def\@tempa{#1}\ifx\@tempa\@empty \href
+  {http://dx.doi.org/#2} {doi:#2}\else \href {http://dx.doi.org/#2} {#1}\fi
+  \endgroup}
+\def\mn@eprint#1#2{\mn@eprint@#1:#2::\@nil}
+\def\mn@eprint@arXiv#1{\href {http://arxiv.org/abs/#1} {{\tt arXiv:#1}}}
+\def\mn@eprint@dblp#1{\href {http://dblp.uni-trier.de/rec/bibtex/#1.xml}
+  {dblp:#1}}
+\def\mn@eprint@#1:#2:#3:#4\@nil{\def\@tempa {#1}\def\@tempb {#2}\def\@tempc
+  {#3}\ifx \@tempc \@empty \let \@tempc \@tempb \let \@tempb \@tempa \fi \ifx
+  \@tempb \@empty \def\@tempb {arXiv}\fi \@ifundefined
+  {mn@eprint@\@tempb}{\@tempb:\@tempc}{\expandafter \expandafter \csname
+  mn@eprint@\@tempb\endcsname \expandafter{\@tempc}}}
+
+\bibitem[\protect\citeauthoryear{{DES Collaboration} et~al.,}{{DES
+  Collaboration} et~al.}{2020}]{2020arXiv200211124D}
+{DES Collaboration} et~al., 2020, arXiv e-prints, \href
+  {https://ui.adsabs.harvard.edu/abs/2020arXiv200211124D} {p. arXiv:2002.11124}
+
+\bibitem[\protect\citeauthoryear{{Drlica-Wagner} et~al.}{{Drlica-Wagner}
+  et~al.}{2018}]{y1gold}
+{Drlica-Wagner} A.,  et~al., 2018, \mn@doi [\apjs] {10.3847/1538-4365/aab4f5},
+  \href {http://adsabs.harvard.edu/abs/2018ApJS..235...33D} {235, 33}
+
+\bibitem[\protect\citeauthoryear{{Elvin-Poole} et~al.}{{Elvin-Poole}
+  et~al.}{2018}]{wthetapaper}
+{Elvin-Poole} J.,  et~al., 2018, \mn@doi [\prd] {10.1103/PhysRevD.98.042006},
+  \href {http://adsabs.harvard.edu/abs/2018PhRvD..98d2006E} {98, 042006}
+
+\bibitem[\protect\citeauthoryear{{Flaugher} et~al.}{{Flaugher}
+  et~al.}{2015}]{decam}
+{Flaugher} B.,  et~al., 2015, \mn@doi [Astron. J.]
+  {10.1088/0004-6256/150/5/150}, \href
+  {http://adsabs.harvard.edu/abs/2015AJ....150..150F} {150, 150}
+
+\bibitem[\protect\citeauthoryear{Huang, Mandelbaum, Freeman, Chen, Rozo, Rykoff
+   \& Baxter}{Huang et~al.}{2016}]{Huang_2016}
+Huang H.-J.,  Mandelbaum R.,  Freeman P.~E.,  Chen Y.-C.,  Rozo E.,  Rykoff E.,
+    Baxter E.~J.,  2016, \mn@doi [Monthly Notices of the Royal Astronomical
+  Society] {10.1093/mnras/stw1982}, 463, 222–244
+
+\bibitem[\protect\citeauthoryear{Huang, Mandelbaum, Freeman, Chen, Rozo  \&
+  Rykoff}{Huang et~al.}{2017}]{Huang_2017}
+Huang H.-J.,  Mandelbaum R.,  Freeman P.~E.,  Chen Y.-C.,  Rozo E.,   Rykoff
+  E.,  2017, \mn@doi [Monthly Notices of the Royal Astronomical Society]
+  {10.1093/mnras/stx2995}, 474, 4772–4794
+
+\bibitem[\protect\citeauthoryear{{Huff} \& {Mandelbaum}}{{Huff} \&
+  {Mandelbaum}}{2017}]{HuffMandelbaum2017}
+{Huff} E.,  {Mandelbaum} R.,  2017, preprint, \href
+  {http://adsabs.harvard.edu/abs/2017arXiv170202600H} {} (\mn@eprint {arXiv}
+  {1702.02600})
+
+\bibitem[\protect\citeauthoryear{{McClintock} et~al.,}{{McClintock}
+  et~al.}{2019}]{2019MNRAS.482.1352M}
+{McClintock} T.,  et~al., 2019, \mn@doi [\mnras] {10.1093/mnras/sty2711}, \href
+  {https://ui.adsabs.harvard.edu/abs/2019MNRAS.482.1352M} {482, 1352}
+
+\bibitem[\protect\citeauthoryear{{Mohr} et~al.}{{Mohr}
+  et~al.}{2008}]{2008SPIE.7016E..0LM}
+{Mohr} J.~J.,  et~al., 2008, in Observatory Operations: Strategies, Processes,
+  and Systems II. p. 70160L, \mn@doi{10.1117/12.789550}
+
+\bibitem[\protect\citeauthoryear{{Rozo}, {Rykoff}, {Becker}, {Reddick}  \&
+  {Wechsler}}{{Rozo} et~al.}{2015}]{2015MNRAS.453...38R}
+{Rozo} E.,  {Rykoff} E.~S.,  {Becker} M.,  {Reddick} R.~M.,   {Wechsler} R.~H.,
+   2015, \mn@doi [\mnras] {10.1093/mnras/stv1560}, \href
+  {https://ui.adsabs.harvard.edu/abs/2015MNRAS.453...38R} {453, 38}
+
+\bibitem[\protect\citeauthoryear{{Rozo} et~al.}{{Rozo}
+  et~al.}{2016}]{2016MNRAS.461.1431R}
+{Rozo} E.,  et~al., 2016, \mn@doi [\mnras] {10.1093/mnras/stw1281}, \href
+  {http://adsabs.harvard.edu/abs/2016MNRAS.461.1431R} {461, 1431}
+
+\bibitem[\protect\citeauthoryear{{Rykoff} et~al.,}{{Rykoff}
+  et~al.}{2014}]{2014ApJ...785..104R}
+{Rykoff} E.~S.,  et~al., 2014, \mn@doi [\apj] {10.1088/0004-637X/785/2/104},
+  \href {https://ui.adsabs.harvard.edu/abs/2014ApJ...785..104R} {785, 104}
+
+\bibitem[\protect\citeauthoryear{{Rykoff} et~al.,}{{Rykoff}
+  et~al.}{2016}]{2016ApJS..224....1R}
+{Rykoff} E.~S.,  et~al., 2016, \mn@doi [\apjs] {10.3847/0067-0049/224/1/1},
+  \href {https://ui.adsabs.harvard.edu/abs/2016ApJS..224....1R} {224, 1}
+
+\bibitem[\protect\citeauthoryear{{Sadibekova}, {Pierre}, {Clerc}, {Faccioli},
+  {Gastaud}, {Le Fevre}, {Rozo}  \& {Rykoff}}{{Sadibekova}
+  et~al.}{2014}]{2014A&A...571A..87S}
+{Sadibekova} T.,  {Pierre} M.,  {Clerc} N.,  {Faccioli} L.,  {Gastaud} R.,  {Le
+  Fevre} J.~P.,  {Rozo} E.,   {Rykoff} E.,  2014, \mn@doi [\aap]
+  {10.1051/0004-6361/201423794}, \href
+  {https://ui.adsabs.harvard.edu/abs/2014A&A...571A..87S} {571, A87}
+
+\bibitem[\protect\citeauthoryear{{Saro} et~al.,}{{Saro}
+  et~al.}{2015}]{2015MNRAS.454.2305S}
+{Saro} A.,  et~al., 2015, \mn@doi [\mnras] {10.1093/mnras/stv2141}, \href
+  {https://ui.adsabs.harvard.edu/abs/2015MNRAS.454.2305S} {454, 2305}
+
+\bibitem[\protect\citeauthoryear{{Sevilla} et~al.}{{Sevilla}
+  et~al.}{2011}]{2011arXiv1109.6741S}
+{Sevilla} I.,  et~al., 2011, preprint, \href
+  {http://adsabs.harvard.edu/abs/2011arXiv1109.6741S} {} (\mn@eprint {arXiv}
+  {1109.6741})
+
+\bibitem[\protect\citeauthoryear{{Sheldon} \& {Huff}}{{Sheldon} \&
+  {Huff}}{2017}]{SheldonHuff2017}
+{Sheldon} E.~S.,  {Huff} E.~M.,  2017, \mn@doi [Astrophys. J.]
+  {10.3847/1538-4357/aa704b}, 841, 24
+
+\bibitem[\protect\citeauthoryear{Troxel \& Ishak}{Troxel \&
+  Ishak}{2015}]{troxeliareview}
+Troxel M.,  Ishak M.,  2015, \mn@doi [Physics Reports]
+  {https://doi.org/10.1016/j.physrep.2014.11.001}, 558, 1
+
+\bibitem[\protect\citeauthoryear{{Troxel} et~al.}{{Troxel}
+  et~al.}{2018}]{shearcorr}
+{Troxel} M.~A.,  et~al., 2018, \mn@doi [\prd] {10.1103/PhysRevD.98.043528},
+  \href {http://adsabs.harvard.edu/abs/2018PhRvD..98d3528T} {98, 043528}
+
+\bibitem[\protect\citeauthoryear{White \& Rees}{White \&
+  Rees}{1978}]{whiterees}
+White S. D.~M.,  Rees M.~J.,  1978, \mn@doi [Monthly Notices of the Royal
+  Astronomical Society] {10.1093/mnras/183.3.341}, 183, 341
+
+\bibitem[\protect\citeauthoryear{{Zuntz}, {Kacprzak}, {Voigt}, {Hirsch}, {Rowe}
+   \& {Bridle}}{{Zuntz} et~al.}{2013}]{2013MNRAS.434.1604Z}
+{Zuntz} J.,  {Kacprzak} T.,  {Voigt} L.,  {Hirsch} M.,  {Rowe} B.,   {Bridle}
+  S.,  2013, \mn@doi [\mnras] {10.1093/mnras/stt1125}, \href
+  {https://ui.adsabs.harvard.edu/abs/2013MNRAS.434.1604Z} {434, 1604}
+
+\bibitem[\protect\citeauthoryear{{Zuntz} et~al.}{{Zuntz}
+  et~al.}{2018}]{shearcat}
+{Zuntz} J.,  et~al., 2018, \mn@doi [\mnras] {10.1093/mnras/sty2219}, \href
+  {http://adsabs.harvard.edu/abs/2018MNRAS.481.1149Z} {481, 1149}
+
+\makeatother
+\end{thebibliography}
